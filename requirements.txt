@@ -1,0 +1,11 @@
+
+praw
+pandas
+numpy
+matplotlib
+scikit-learn
+nltk
+spacy
+gensim
+vaderSentiment
+python-dotenv
