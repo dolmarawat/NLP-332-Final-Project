@@ -41,3 +41,13 @@ We use an end-to-end NLP pipeline:
     ├── sentiment.py
     ├── topics.py
     └── supervised.py
+
+```
+
+## Notes for working on this project:
+
+1. Pull all the recent changes to the github to your repo in the VSCODE: 
+
+2. Make changes/updates to the code and make sure two people are not pushing the updates at the same time. 
+
+3. Once done with your part, push the code to main branch > feel free to notify others.
