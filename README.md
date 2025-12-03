@@ -2,7 +2,7 @@
 
 This repository contains the code and artifacts for our IST 322: Introduction to NLP final project.
 
-We analyze public posts and comments from Reddit communities such as r/Diamonds subreddit to understand how consumers talk about:
+We analyze public posts and comments from Reddit, Etsy and Amazon. We analysed communities such as r/Diamonds subreddit to understand how consumers talk about:
 
 - Lab-grown vs. natural diamonds  
 - Different jewelry product types (rings, earrings, necklaces, bracelets)  
