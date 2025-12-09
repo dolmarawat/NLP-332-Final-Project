@@ -1,53 +1,67 @@
-# NLP-332-Final-Project
+## NLP 332 Final Project: Analyzing AI-Related Job Anxiety & Future Optimism on Reddit
+This repository contains the full workflow, data preparation, exploratory analysis, sentiment modeling, and topic modeling for the project:
 
-This repository contains the code and artifacts for our IST 322: Introduction to NLP final project.
+### Final Report:
+Analyzing AI-Related Job Anxiety and Future Optimism on Reddit
+(see: /reports/final_report.pdf)
+### Notebook:
+All steps from corpus creation → preprocessing → EDA → LSA topic modeling → sentiment analysis
+(see: /notebooks/final_notebook.ipynb)
 
-We analyze public posts and comments from Reddit, Etsy and Amazon. We analysed communities such as r/Diamonds subreddit to understand how consumers talk about:
+### Project Overview
+This project analyzes 10,000 Reddit posts discussing AI, automation, career changes, layoffs, and future optimism. 
+##### The main goals:
+- Identify linguistic patterns in AI-related job anxiety
+- Compare career-fear vs. future-hope communities
+- Model sentiment polarity & subjectivity
+- Extract dominant themes using LSA topic modeling
+- Build interpretable NLP pipelines for downstream tasks
 
-- Lab-grown vs. natural diamonds  
-- Different jewelry product types (rings, earrings, necklaces, bracelets)  
-- Occasion-based sentiment (proposals, weddings, anniversaries, birthdays)  
-- Diamonds vs. gold in the context of price, ethics, and emotional value  
+# Repository Structure
+data/              # raw + cleaned dataset
+notebooks/         # Colab/ Jupyter files
+src/               # Python modules for preprocessing, EDA, models
+reports/           # Milestone + Final Report
 
-We use an end-to-end NLP pipeline:
+#### Key Features
+1. Corpus Creation
+10,000 Reddit posts balanced between 2 labels: CAREER_ANXIETY, FUTURE_HYPE
+2. Text Preprocessing Pipeline
+- Contraction expansion
+- Tokenization
+- Lemmatization (spaCy)
+- Stemming (Snowball)
+- Normalization & Reddit-artifact cleaning
+- Lexical diversity computation
+- Vocabulary reduction
+3. Exploratory Data Analysis
+Frequency distributions
+Zipf-like token distribution
+Review length statistics by label
+Context windows ("AI", "job", "scared")
+Concordance plots
+4. Sentiment Modeling
+TextBlob Polarity + Subjectivity
+VADER compound scores
+5. Topic Modeling
+LSA (TruncatedSVD)
+Coherence evaluation
+Top-word visualization
 
-1. **Corpus Creation** – Scraping posts & top-level comments from Reddit  
-2. **Preprocessing** – Cleaning, tokenization, lemmatization, bigrams  
-3. **Exploratory Data Analysis** – Corpus stats, token distributions  
-4. **Sentiment Analysis** – Using VADER on Reddit text  
-5. **Topic Modeling** – LDA on bigram-enriched tokens  
-6. **Supervised Learning** – Classifier to distinguish lab-grown vs natural diamond discussions  
+#### Installation
+pip install -r requirements.txt
+▶️ Running the Pipeline
+python src/preprocessing.py
+python src/eda.py
+python src/sentiment.py
+python src/topic_modeling.py
 
----
+##### Authors
+Dolma Rawat 
+Rohini Vishwanathan 
+Yashas Basavaraju Mahesh
+Aashish Sunar 
+Course: IST 332 — Natural Language Processing
 
-## Repository Structure
 
-```text
-.
-├── README.md
-├── requirements.txt
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-│   ├── 01_data_collection.ipynb
-│   ├── 02_preprocessing_eda.ipynb
-│   └── 03_modeling.ipynb
-└── src/
-    ├── __init__.py
-    ├── config.py
-    ├── reddit_scraper.py
-    ├── preprocessing.py
-    ├── sentiment.py
-    ├── topics.py
-    └── supervised.py
 
-```
-
-## Notes for working on this project:
-
-1. Pull all the recent changes to the github to your repo in the VSCODE: 
-
-2. Make changes/updates to the code and make sure two people are not pushing the updates at the same time. 
-
-3. Once done with your part, push the code to main branch > feel free to notify others.
