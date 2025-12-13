@@ -58,10 +58,6 @@ Models evaluated on TF–IDF features:
 - The three emotional orientations (Anxiety / Hype / Uncertainty) show consistent linguistic + thematic differences.
 - Linear models perform best on sparse TF–IDF, with **Linear SVM** providing the strongest overall balance of performance among tested models.
 
-> Add your final metrics here if you want:
-> - Best model: Linear SVM  
-> - Accuracy: <...>  
-> - Weighted F1: <...>
 
 ---
 
