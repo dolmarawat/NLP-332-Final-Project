@@ -51,6 +51,7 @@ Models evaluated on TF–IDF features:
 - Multinomial Naive Bayes
 - Random Forest
 
+
 ---
 
 ## Results (high-level)
@@ -63,9 +64,6 @@ Models evaluated on TF–IDF features:
 > - Weighted F1: <...>
 
 ---
-
-
-
 
 ## Installation
 
