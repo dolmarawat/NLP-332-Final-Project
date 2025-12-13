@@ -68,7 +68,7 @@ Models evaluated on TF–IDF features:
 
 
 ## Installation
-```bash
+
 pip install -r requirements.txt
 
 ---
@@ -83,39 +83,26 @@ python src/supervised_learning.p
 
 ## Deployment idea (from project plan)
 A lightweight real-world version of this system could include:
+- Scheduled ingestion of new posts (API/scrape).
+- Automated preprocessing + sentiment/topic inference + emotional classification.
+- Storage of outputs for time-series monitoring.
+- A dashboard (e.g., Streamlit/Dash/Power BI) with trend lines + alerts.
+- Periodic retraining + drift monitoring + a small human audit loop. [file:13]
 
-Scheduled ingestion of new posts (API/scrape)
-
-Automated preprocessing + sentiment/topic inference + emotional classification
-
-Storage of outputs for time-series monitoring
-
-A dashboard (e.g., Streamlit/Dash/Power BI) with trend lines + alerts
-
-Periodic retraining + drift monitoring + small human audit loop
+---
 
 ## Ethics & data usage
 This project uses public online text. Use the data responsibly:
-
-Avoid deanonymization and do not publish sensitive raw text.
-
-Follow platform rules and rate limits for collection.
+- Avoid deanonymization and do not publish sensitive raw text.
+- Follow platform rules and rate limits for collection.
 
 ---
 
 ## Authors
-Dolma Rawat
-
-Rohini Vishwanathan
-
-Yashas Basavaraju Mahesh
-
-Aashish Sunar
-
----
+- Dolma Rawat
+- Rohini Vishwanathan
+- Yashas Basavaraju Mahesh
+- Aashish Sunar
 
 Course: IST 332 — Natural Language Processing
-
-
-
 
