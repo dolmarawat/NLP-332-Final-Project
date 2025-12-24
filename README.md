@@ -2,7 +2,7 @@
 
 This repository contains an end-to-end NLP pipeline to study how people discuss AI and work on Reddit, focusing on **emotional orientation** (Career Anxiety vs. Future Hype/Optimism vs. Uncertainty).  
 
-**Final report:** `reports/final_report.pdf`  
+**Final report:** `Final NLP Project_AI Text Data.pdf`  
 **Main notebook:** `notebooks/final_notebook.ipynb`  
 
 ---
